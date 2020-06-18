@@ -1,0 +1,40 @@
+<{{or as 'div'}} class="{{~
+  concat
+    (ternary inline 'flex-inline' 'flex')
+    (bool column 'true' (concat ' ' 'flex-column'))
+    (bool column 'false' (concat ' ' 'flex-row'))
+    (bool wrap 'true' (concat ' ' 'flex-wrap'))
+    (bool wrap 'false' (concat ' ' 'flex-nowrap')) 
+    (and align (concat ' ' 'align-' align))
+    (and justify (concat ' ' 'justify-' justify))
+    (and xs (bool xs.column 'true' (concat ' ' 'xs-flex-column')))
+    (and xs (bool xs.column 'false' (concat ' ' 'xs-flex-row')))
+    (and xs (bool xs.wrap 'true' (concat ' ' 'xs-flex-wrap')))
+    (and xs (bool xs.wrap 'false' (concat ' ' 'xs-flex-nowrap')))
+    (and xs (and xs.align (concat ' ' 'xs-flex-align-' xs.align)))
+    (and xs (and xs.justify (concat ' ' 'xs-flex-justify-' xs.justify)))
+    (and sm (bool sm.column 'true' (concat ' ' 'sm-flex-column')))
+    (and sm (bool sm.column 'false' (concat ' ' 'sm-flex-row')))
+    (and sm (bool sm.wrap 'true' (concat ' ' 'sm-flex-wrap')))
+    (and sm (bool sm.wrap 'false' (concat ' ' 'sm-flex-nowrap')))
+    (and sm (and sm.align (concat ' ' 'sm-flex-align-' sm.align)))
+    (and sm (and sm.justify (concat ' ' 'sm-flex-justify-' sm.justify)))
+    (and md (bool md.column 'true' (concat ' ' 'md-flex-column')))
+    (and md (bool md.column 'false' (concat ' ' 'md-flex-row')))
+    (and md (bool md.wrap 'true' (concat ' ' 'md-flex-wrap')))
+    (and md (bool md.wrap 'false' (concat ' ' 'md-flex-nowrap')))
+    (and md (and md.align (concat ' ' 'md-flex-align-' md.align)))
+    (and md (and md.justify (concat ' ' 'md-flex-justify-' md.justify)))
+    (and class (concat ' ' class))
+}}">
+  {{> @partial-block 
+    column=null
+    wrap=null
+    align=null
+    justify=null
+    md=null
+    sm=null
+    xs=null
+    class=null
+  }}
+</{{or as 'div'}}>

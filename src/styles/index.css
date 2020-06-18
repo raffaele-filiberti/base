@@ -1,0 +1,25 @@
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('../partials/Layout/Layout.css');
+@import url('../partials/Text/Text.css');
+@import url('../partials/Flex/Flex.css');
+@import url('../partials/Spacer/Spacer.css');
+
+.debug > * {
+  border: 1px solid red;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+.window {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

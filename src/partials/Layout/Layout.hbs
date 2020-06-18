@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  {{#>Flex align="center" justify="center" class="loader"}}
+  Questo è il loader
+  {{/Flex}}
+  {{#>Flex align="center" justify="center" class="navigation"}}
+    <a href="/index.html">home</a>
+    <a href="/products.html">products</a>
+    <a href="/styleguide.html">styleguide</a>
+    <a href="/horizontal.html">horizontal</a>
+  {{/Flex}}
+  <div id="cookie">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rem minus harum labore esse necessitatibus eos nam qui amet, laudantium placeat enim distinctio. Inventore porro sapiente numquam earum repudiandae! Autem?
+    <button>accetta</button>
+  </div>
+  <div class="window">
+    <div data-barba="wrapper">
+      <main
+        data-barba="container"
+        data-barba-namespace="{{or namespace 'default'}}"
+      >
+        <div data-scroll-section="">
+          {{> @partial-block}}
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

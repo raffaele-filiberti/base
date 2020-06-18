@@ -1,0 +1,25 @@
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  z-index: 999;
+}
+
+.navigation {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#cookie {
+  position: absolute;
+  z-index: 999;
+  background: #000;
+  color: #fff
+}

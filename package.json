@@ -1,0 +1,44 @@
+{
+  "name": "luce-di-sorrento",
+  "version": "1.0.0",
+  "description": "luce di sorrento ecommerce hbs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorenzomigliorero/malmo"
+  },
+  "scripts": {
+    "dev": "malmo dev",
+    "build": "malmo build"
+  },
+  "keywords": [],
+  "author": "Lorenzo Migliorero <lorenzomigliorero@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "animejs": "^3.2.0",
+    "get-cookie": "^0.1.1"
+  },
+  "devDependencies": {
+    "@aquestsrl/eslint-config": "0.3.4",
+    "@aquestsrl/html-webpack-dynamic-template-parameters-plugin": "^1.0.0",
+    "@aquestsrl/html-webpack-reload-plugin": "^1.0.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@malmo/eslint-config": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "cssnano": "^4.1.10",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "glob": "^7.1.6",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

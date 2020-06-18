@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  --body-line-height: 1.4;
+  --heading-line-height: 1.8;
+
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-secondary);
+  line-height: var(--body-line-height);
+}
+
+.text-xxxl {
+  font-family: var(--font-primary);
+  font-size: var(--text-xxxl);
+  line-height: var(--heading-line-height);
+}
+
+h1,
+.text-xxl {
+  font-family: var(--font-primary);
+  font-size: var(--text-xxl);
+  line-height: var(--heading-line-height);
+}
+
+h2,
+.text-xl {
+  font-family: var(--font-primary);
+  font-size: var(--text-xl);
+  line-height: var(--heading-line-height);
+}
+
+h3,
+.text-lg {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+  line-height: var(--heading-line-height);
+}
+
+h4,
+.text-md {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  line-height: var(--heading-line-height);
+}
+
+.text-sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+strong {
+  font-weight: 500;
+}

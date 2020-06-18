@@ -1,0 +1,22 @@
+<{{or as 'div'}} class="{{~
+  concat 
+    'spacer'
+    (and left (concat ' ' 'padding-left-' left))
+    (and top (concat ' ' 'padding-top-' top))
+    (and md (and md.left (concat ' ' 'md-padding-left-' md.left)))
+    (and md (and md.top (concat ' ' 'md-padding-top-' md.top)))
+    (and sm (and sm.left (concat ' ' 'sm-padding-left-' sm.left)))
+    (and sm (and sm.top (concat ' ' 'sm-padding-top-' sm.top)))
+    (and xs (and xs.left (concat ' ' 'xs-padding-left-' xs.left)))
+    (and xs (and xs.top (concat ' ' 'xs-padding-top-' xs.top)))
+    (and class (concat ' ' class))
+}}">
+  {{> @partial-block 
+    left=null
+    top=null
+    md=null
+    sm=null
+    xs=null
+    class=null
+  }}
+</{{or as 'div'}}>
