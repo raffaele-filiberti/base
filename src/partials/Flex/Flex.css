@@ -1,6 +1,9 @@
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
 .flex-inline {
   display: inline-flex;
 }
@@ -43,6 +46,15 @@
 @media (--xs) {
   .xs-flex-wrap {
     flex-wrap: wrap;
+  }
+  .xs-flex-row {
+    flex-direction: row;
+  }
+  .xs-flex-justify-between {
+    justify-content: space-between;
+  }
+  .xs-flex-align-end {
+    align-items: flex-end;
   }
 }
 @media (--sm) {

@@ -1,14 +1,16 @@
 <{{or as 'div'}} class="{{~
   concat 
-    'spacer'
-    (and left (concat ' ' 'padding-left-' left))
-    (and top (concat ' ' 'padding-top-' top))
-    (and md (and md.left (concat ' ' 'md-padding-left-' md.left)))
-    (and md (and md.top (concat ' ' 'md-padding-top-' md.top)))
-    (and sm (and sm.left (concat ' ' 'sm-padding-left-' sm.left)))
-    (and sm (and sm.top (concat ' ' 'sm-padding-top-' sm.top)))
-    (and xs (and xs.left (concat ' ' 'xs-padding-left-' xs.left)))
-    (and xs (and xs.top (concat ' ' 'xs-padding-top-' xs.top)))
+    (and left (concat ' ' 'spacer-left-' left))
+    (and top (concat ' ' 'spacer-top-' top))
+    (and rootTop (concat ' ' 'root-top-' rootTop))
+    (and rootLeft (concat ' ' 'root-left-' rootLeft))
+    (and md (and md.left (concat ' ' 'md-spacer-left-' md.left)))
+    (and md (and md.top (concat ' ' 'md-spacer-top-' md.top)))
+    (and sm (and sm.left (concat ' ' 'sm-spacer-left-' sm.left)))
+    (and sm (and sm.top (concat ' ' 'sm-spacer-top-' sm.top)))
+    (and xs (and xs.left (concat ' ' 'xs-spacer-left-' xs.left)))
+    (and xs (and xs.top (concat ' ' 'xs-spacer-top-' xs.top)))
+    (and xs (and xs.rootTop (concat ' ' 'xs-root-top-' rootTop)))
     (and class (concat ' ' class))
 }}">
   {{> @partial-block 

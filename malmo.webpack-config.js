@@ -1,7 +1,7 @@
 const glob = require('glob');
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackReloadPlugin = require('@aquestsrl/html-webpack-reload-plugin');
+// const HtmlWebpackReloadPlugin = require('@aquestsrl/html-webpack-reload-plugin');
 const HtmlWebpackDynamicTemplateParametersPlugin = require('@aquestsrl/html-webpack-dynamic-template-parameters-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -46,7 +46,7 @@ module.exports = () => ({
           to: 'assets',
         },
       ]),
-    process.env.NODE_ENV !== 'production' ? new HtmlWebpackReloadPlugin() : undefined,
+    // process.env.NODE_ENV !== 'production' ? new HtmlWebpackReloadPlugin() : undefined,
   ].filter(Boolean),
   module: {
     rules: [
